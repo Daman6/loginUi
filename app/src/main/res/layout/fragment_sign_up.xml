@@ -72,10 +72,9 @@
                     android:background="@color/white">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                         android:layout_width="345dp"
                         android:layout_height="wrap_content"
-                        android:background="@color/white"
+                        android:background="@drawable/outline_background"
                         android:hint="Name" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -85,10 +84,9 @@
                     android:background="@color/white">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                         android:layout_width="345dp"
                         android:layout_height="wrap_content"
-                        android:background="@color/white"
+                        android:background="@drawable/outline_background"
                         android:layout_marginTop="20dp"
                         android:hint="Email" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -99,11 +97,10 @@
                     android:background="@color/white">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                         android:layout_width="345dp"
                         android:layout_marginTop="20dp"
                         android:layout_height="wrap_content"
-                        android:background="@color/white"
+                        android:background="@drawable/outline_background"
                         android:hint="Password" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -123,7 +120,7 @@
                     android:id="@+id/signupBtn"
                     android:layout_width="345dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/btn_background"
+                    android:background="@drawable/gradient"
                     android:text="Sign up"
                     android:textAllCaps="false"
                     android:textColor="@color/white"

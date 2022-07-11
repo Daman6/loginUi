@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
+    <color name="purple_200">#4C7BCD</color>
+    <color name="purple_500">#01509D</color>
+    <color name="purple_700">#012E72</color>
+    <color name="purple_dark">#01204F</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+    <color name="buttongreen">#4CAF50</color>
+    <color name="yello">#FFD500</color>
+    <color name="peach">@color/yello</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="red">#E53935</color>
+    <color name="grey_back">#1D747474</color>
+    <color name="grey_light">#D6D4D4</color>
+    <color name="grey_dark">#717171</color>
+    <color name="colorBlue">#3675F4</color>
+    <color name="colorMediumGray">#C5C5C5</color>
+    <color name="colorElevationStart">#33000000</color>
+    <color name="colorElevationCenter">#05000000</color>
+    <color name="colorElevationEnd">@android:color/transparent</color>
 </resources>

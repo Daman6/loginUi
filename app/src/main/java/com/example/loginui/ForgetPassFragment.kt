@@ -7,15 +7,17 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import com.example.loginui.databinding.FragmentBlankBinding
-import com.example.loginui.databinding.FragmentSignUpBinding
+import com.example.loginui.databinding.FragmentForgetPassBinding
 
 
-class SignUpFragment : Fragment() {
+class ForgetPassFragment : Fragment() {
 
-    lateinit var binding : FragmentSignUpBinding
+    lateinit var binding : FragmentForgetPassBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
+
         }
     }
 
@@ -24,17 +26,16 @@ class SignUpFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentSignUpBinding.inflate(layoutInflater)
+        binding = FragmentForgetPassBinding.inflate(layoutInflater)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.text1.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_signUpFragment_to_loginFragment)
-        }
-        binding.signupBtn.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_signUpFragment_to_homeActivity)
+
+        binding.backtosignin.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_forgetPassFragment_to_loginFragment)
         }
     }
+
 }

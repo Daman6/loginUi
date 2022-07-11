@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
     </data>
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -40,7 +38,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:gravity="center"
-                    android:text="Log in"
+                    android:text="Forget Password?"
                     android:textColor="@color/black"
                     android:textStyle="bold"
                     android:textSize="22sp" />
@@ -50,63 +48,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:gravity="center"
-                    android:text="Login with social network"
+                    android:text="Type your registered email below."
                     android:textColor="@color/black"
                     android:textSize="15sp" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/facebookBtn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:cardBackgroundColor="#00BCD4"
-                        app:cardCornerRadius="10dp">
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/facebookicon"
-                            android:background="@color/colorBlue"
-                            android:scaleType="center"/>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/instaBtn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        app:cardBackgroundColor="#00BCD4"
-                        app:cardCornerRadius="10dp">
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/insta"
-                            android:background="@color/colorBlue"
-                            android:scaleType="center"/>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/googleBtn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:cardBackgroundColor="#00BCD4"
-                        app:cardCornerRadius="10dp">
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/google"
-                            android:background="@color/colorBlue"
-                            android:scaleType="center"/>
-                    </androidx.cardview.widget.CardView>
-
-                </LinearLayout>
 
 
             </LinearLayout>
@@ -133,19 +78,6 @@
                         android:hint="Email" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="345dp"
-                    android:layout_height="match_parent"
-                    android:background="@color/white">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="345dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/outline_background"
-                        android:hint="Password" />
-                </com.google.android.material.textfield.TextInputLayout>
-
             </LinearLayout>
 
             <LinearLayout
@@ -158,13 +90,13 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/forgetPass"
+                    android:id="@+id/backtosignin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:fontFamily="monospace"
                     android:gravity="center"
-                    android:text="Forgot Password?"
+                    android:text="Back to sign in?"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
@@ -173,21 +105,11 @@
                     android:layout_width="345dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/gradient"
-                    android:text="Log in"
+                    android:text="Send Mail"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
                     android:textSize="13sp" />
 
-                <TextView
-                    android:id="@+id/text1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/forgetPass"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="monospace"
-                    android:text="Sign up"
-                    android:textColor="@color/black"
-                    android:textSize="14sp" />
 
 
             </LinearLayout>

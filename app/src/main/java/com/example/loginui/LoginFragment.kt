@@ -35,8 +35,12 @@ class LoginFragment : Fragment() {
             Navigation.findNavController(it).navigate(R.id.action_loginFragment_to_signUpFragment)
         }
         binding.loginBtn.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_loginFragment_to_homeFragment)
+            Navigation.findNavController(it).navigate(R.id.action_loginFragment_to_homeActivity)
         }
+        binding.forgetPass.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_loginFragment_to_forgetPassFragment)
+        }
+
     }
 
 }

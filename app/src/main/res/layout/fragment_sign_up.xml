@@ -19,21 +19,6 @@
             android:background="@color/white"
             android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                app:cardBackgroundColor="#D9FAF7">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Register"
-                    android:textSize="20dp"
-                    android:textColor="@color/black"
-                    android:fontFamily="sans-serif-black"
-                    android:layout_gravity="center"/>
-            </androidx.cardview.widget.CardView>
-
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -83,7 +68,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="sans-serif-condensed-medium"
+                                    android:fontFamily="sans-serif-condensed-light"
                                     android:text="Already have an account?"
                                     android:textColor="@color/black"
                                     android:textSize="16dp" />
@@ -92,77 +77,57 @@
                                     android:id="@+id/signup"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginStart="10dp"
-                                    android:fontFamily="sans-serif-medium"
+                                    android:layout_marginStart="20dp"
+                                    android:fontFamily="sans-serif-condensed-light"
                                     android:text="Sign in"
                                     android:textColor="@color/colorBlue"
                                     android:textSize="16dp" />
 
                             </LinearLayout>
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:fontFamily="sans-serif-condensed-medium"
-                                android:text="Name*"
-                                android:textColor="@color/black"
-                                android:textSize="18dp" />
-
-                            <EditText
+                            <com.google.android.material.textfield.TextInputLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="50dp"
-                                android:background="@drawable/outline_background"
-                                android:hint="Full name"
-                                android:paddingStart="30dp"
-                                android:textSize="18dp"
-                                android:layout_marginTop="8dp"/>
+                                android:layout_height="match_parent">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@color/white"
+                                    android:hint="Full Name"
+                                    android:textSize="18dp"
+                                    android:layout_marginTop="10dp" />
+                            </com.google.android.material.textfield.TextInputLayout>
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:fontFamily="sans-serif-condensed-medium"
-                                android:text="Username or email*"
-                                android:textColor="@color/black"
-                                android:textSize="18dp" />
-
-                            <EditText
+                            <com.google.android.material.textfield.TextInputLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="50dp"
-                                android:background="@drawable/outline_background"
-                                android:hint="Email or username"
-                                android:paddingStart="30dp"
-                                android:textSize="18dp"
-                                android:layout_marginTop="8dp"/>
+                                android:layout_height="match_parent"
+                                >
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@color/white"
+                                    android:hint="Mobile no."
+                                    android:textSize="18dp"
+                                    android:layout_marginTop="10dp" />
+                            </com.google.android.material.textfield.TextInputLayout>
 
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="sans-serif-condensed-medium"
-                                android:text="Password*"
-                                android:textColor="@color/black"
-                                android:textSize="18dp"
-                                android:layout_marginTop="10dp"/>
-
-                            <EditText
+                            <com.google.android.material.textfield.TextInputLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="50dp"
-                                android:background="@drawable/outline_background"
-                                android:hint="Password"
-                                android:paddingStart="30dp"
-                                android:paddingEnd="10dp"
-                                android:padding="4dp"
-                                android:textSize="18dp"
-                                android:drawableEnd="@drawable/ic_outline_remove_red_eye_24"
-                                android:layout_marginTop="8dp"/>
+                                android:layout_height="match_parent">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@color/white"
+                                    android:hint="Password"
+                                    android:textSize="18dp"
+                                    android:layout_marginTop="10dp" />
+                            </com.google.android.material.textfield.TextInputLayout>
 
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
+                                android:layout_marginTop="20dp"
                                 android:gravity="start"
                                 android:orientation="horizontal">
 
@@ -174,22 +139,21 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="sans-serif-condensed-medium"
-                                    android:text="I agree the User Agreement and"
+                                    android:fontFamily="sans-serif-condensed-light"
+                                    android:text="I agree the User Agreement and "
                                     android:textColor="@color/black"
-                                    android:textSize="16dp" />
+                                    android:textSize="14dp" />
 
+                                <TextView
+                                    android:id="@+id/forgetPass"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-condensed-light"
+                                    android:text="Term and Condition."
+                                    android:textColor="@color/colorBlue"
+                                    android:textSize="14dp"
+                                    />
                             </LinearLayout>
-                            <TextView
-                                android:id="@+id/forgetPass"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="sans-serif-medium"
-                                android:layout_marginStart="30dp"
-                                android:text="Term and Condition."
-                                android:textColor="@color/colorBlue"
-                                android:textSize="16dp"
-                                />
 
                             <androidx.appcompat.widget.AppCompatButton
                                 android:id="@+id/signupBtn"

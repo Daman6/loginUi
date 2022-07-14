@@ -7,62 +7,65 @@
 
     </data>
 
-
-    <androidx.drawerlayout.widget.DrawerLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/drawerLayout"
-        tools:context=".QuizFragment">
+        android:layout_height="match_parent">
 
         <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/recyclerView11"
-        tools:listitem="@layout/papers_item_layout"/>
-
-        <com.google.android.material.navigation.NavigationView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="start"
-            android:fitsSystemWindows="true">
-
-            <LinearLayout
-                android:layout_gravity="center_vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    app:cardBackgroundColor="@color/purple_500">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="NO. OF QUESTIONS"
-                        android:layout_gravity="center"
-                        android:textSize="22dp"
-                        android:textColor="@color/white"/>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:id="@+id/recyclerView"
-                    tools:listitem="@layout/drawer_item_layout" />
-            </LinearLayout>
-
-        </com.google.android.material.navigation.NavigationView>
+            android:id="@+id/recyclerView11"
+            android:padding="5dp"
+            tools:listitem="@layout/papers_item_layout"/>
+    </FrameLayout>
 
 
 
-
-
-    </androidx.drawerlayout.widget.DrawerLayout>
 </layout>
 
+<!--<androidx.drawerlayout.widget.DrawerLayout-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:id="@+id/drawerLayout"-->
+<!--tools:context=".QuizFragment">-->
 
+<!--</androidx.drawerlayout.widget.DrawerLayout>-->
+
+
+<!--<com.google.android.material.navigation.NavigationView-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="match_parent"-->
+<!--android:layout_gravity="start"-->
+<!--android:fitsSystemWindows="true">-->
+
+<!--<LinearLayout-->
+<!--    android:layout_gravity="center_vertical"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical">-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        app:cardBackgroundColor="@color/purple_500">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="NO. OF QUESTIONS"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textSize="22dp"-->
+<!--            android:textColor="@color/white"/>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:id="@+id/recyclerView"-->
+<!--        tools:listitem="@layout/drawer_item_layout" />-->
+<!--</LinearLayout>-->
+
+<!--</com.google.android.material.navigation.NavigationView>-->
 
     <!--            <androidx.viewpager2.widget.ViewPager2-->
     <!--                android:layout_width="match_parent"-->

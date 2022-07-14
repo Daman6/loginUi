@@ -20,7 +20,9 @@
         <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.24479166666666666" />
         <entry key="app/src/main/res/layout/fragment_test.xml" value="0.24479166666666666" />
         <entry key="app/src/main/res/layout/fragment_test_list.xml" value="0.24479166666666666" />
+        <entry key="app/src/main/res/layout/fragment_test_start.xml" value="0.24479166666666666" />
         <entry key="app/src/main/res/layout/item_card.xml" value="0.24375" />
+        <entry key="app/src/main/res/layout/item_card2.xml" value="0.24479166666666666" />
         <entry key="app/src/main/res/layout/item_viewpager.xml" value="0.24375" />
         <entry key="app/src/main/res/layout/nav_header.xml" value="0.24375" />
         <entry key="app/src/main/res/layout/papers_item_layout.xml" value="0.24375" />

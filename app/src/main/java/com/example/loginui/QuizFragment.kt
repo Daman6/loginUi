@@ -63,10 +63,10 @@ class QuizFragment : Fragment() {
         for (i in 1..30) {
             qnolist.add(i)
         }
-        binding.recyclerView.apply {
-            adapter = QuestionlistAdapter(qnolist)
-            layoutManager = GridLayoutManager(requireContext(),3)
-        }
+//        binding.recyclerView.apply {
+//            adapter = QuestionlistAdapter(qnolist)
+//            layoutManager = GridLayoutManager(requireContext(),3)
+//        }
         list = mutableListOf<PaperItemModel>()
         list.add(PaperItemModel("General Intelligence Practice Set","(Matriculation Level)","25 Ques.","17 min","50 Marks"))
         list.add(PaperItemModel("General Intelligence Practice Set","(Matriculation Level)","25 Ques.","17 min","50 Marks"))
@@ -78,10 +78,10 @@ class QuizFragment : Fragment() {
 //        binding.viewpager2.adapter = ad
 //        binding.viewpager2.orientation =ViewPager2.ORIENTATION_HORIZONTAL
 
-
-        toogle = ActionBarDrawerToggle(requireActivity(),binding.drawerLayout,R.string.open,R.string.close)
-        binding.drawerLayout.addDrawerListener(toogle)
-        toogle.syncState()
+//
+//        toogle = ActionBarDrawerToggle(requireActivity(),binding.drawerLayout,R.string.open,R.string.close)
+//        binding.drawerLayout.addDrawerListener(toogle)
+//        toogle.syncState()
 
 
         binding.recyclerView11.apply {

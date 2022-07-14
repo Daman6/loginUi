@@ -2,6 +2,9 @@ package com.example.loginui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
@@ -14,14 +17,20 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_nav)
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragment) as NavHostFragment
-        val navController = navHostFragment.navController
-
-        bottomNavigationView.setupWithNavController(navController)
-
+//        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+//        val navController = navHostFragment.navController
+//
+        bottomNavigationView.setOnItemSelectedListener {
+            when(it.itemId){
+                R.id.cousesbtn-> Toast.makeText(this,"Course",Toast.LENGTH_LONG).show()
+                R.id.profileBtn-> Toast.makeText(this,"profile",Toast.LENGTH_LONG).show()
+                R.id.settingBtn-> Toast.makeText(this,"setting",Toast.LENGTH_LONG).show()
+            }
+            true
+        }
     }
+
 
 
 }

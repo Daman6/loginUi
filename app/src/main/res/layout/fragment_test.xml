@@ -142,15 +142,15 @@
             android:id="@+id/startbtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Play Quiz"
-            android:textColor="@color/white"
-            android:textSize="17dp"
-            android:textStyle="italic"
-            android:letterSpacing="0.3"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="10dp"
             android:layout_marginTop="5dp"
-            android:background="@drawable/gradient" />
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/gradient"
+            android:letterSpacing="0.3"
+            android:text="Start"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="italic" />
     </RelativeLayout>
 </layout>

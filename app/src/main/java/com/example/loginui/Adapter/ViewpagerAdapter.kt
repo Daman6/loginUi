@@ -7,31 +7,32 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.loginui.Model.PaperItemModel
 import com.example.loginui.Model.QuestionModel
 import com.example.loginui.R
+import com.example.loginui.databinding.DrawerItemLayoutBinding
 import com.example.loginui.databinding.ItemViewpagerBinding
 import com.example.loginui.databinding.PapersItemLayoutBinding
 
-class ViewpagerAdapter(val list :MutableList<PaperItemModel>):
+class ViewpagerAdapter(val list :MutableList<QuestionModel>):
     RecyclerView.Adapter<ViewpagerAdapter.ViewPagerHolder>() {
 
-    inner class ViewPagerHolder(val binding: PapersItemLayoutBinding)
+    inner class ViewPagerHolder(val binding:ItemViewpagerBinding)
         :RecyclerView.ViewHolder(binding.root){
 
         }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewPagerHolder {
-        val binding: PapersItemLayoutBinding = DataBindingUtil.inflate(
-            LayoutInflater.from(parent.context), R.layout.papers_item_layout, parent, false
+        val binding: ItemViewpagerBinding = DataBindingUtil.inflate(
+            LayoutInflater.from(parent.context), R.layout.item_viewpager, parent, false
         )
         return ViewPagerHolder(binding)
     }
 
     override fun onBindViewHolder(holder: ViewPagerHolder, position: Int) {
         val currentItem = list[position]
-        holder.binding.paperTotalTime.text = currentItem.paperTotalTime
-        holder.binding.paperToatalQues.text = currentItem.paperTotalQues
-        holder.binding.paperTotalMarks.text = currentItem.paperTotalMarks
-        holder.binding.paperName.text = currentItem.paperName
-        holder.binding.paperLevel.text = currentItem.paperLevel
+        holder.binding.question.text = currentItem.question.toString()
+        holder.binding.option1.text = currentItem.option1.toString()
+        holder.binding.option2.text = currentItem.option2.toString()
+        holder.binding.option3.text = currentItem.option3.toString()
+        holder.binding.option4.text = currentItem.option4.toString()
 
     }
 

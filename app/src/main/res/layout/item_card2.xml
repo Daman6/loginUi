@@ -10,8 +10,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
             android:elevation="10dp"
+            android:layout_margin="8dp"
             app:cardBackgroundColor="@color/white">
 
 
@@ -51,6 +51,15 @@
                         android:fontFamily="sans-serif-condensed-medium"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
+                <TextView
+                    android:id="@+id/totalPaperSet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="40+"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
 
 
 

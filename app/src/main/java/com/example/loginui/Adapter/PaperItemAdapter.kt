@@ -33,6 +33,9 @@ class PaperItemAdapter (var list: MutableList<PaperItemModel>): RecyclerView.Ada
         holder.binding.paperName.text = currentItem.paperName
         holder.binding.paperLevel.text = currentItem.paperLevel
 
+        holder.itemView.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_quizFragment_to_testStartFragment)
+        }
     }
 
     override fun getItemCount(): Int {

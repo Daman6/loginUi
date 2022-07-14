@@ -35,10 +35,10 @@ class testListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         list = mutableListOf<TestListModel>()
-        list.add(TestListModel("Science","dd"))
-        list.add(TestListModel("Maths","dd"))
-        list.add(TestListModel("English","dd"))
-        list.add(TestListModel("sst","dd"))
+        list.add(TestListModel("Science","40+","dd"))
+        list.add(TestListModel("Maths","20+","dd"))
+        list.add(TestListModel("English","100+","dd"))
+        list.add(TestListModel("sst","30+","dd"))
         binding.recyclerView.apply {
             adapter = TestListAdapter(list)
             layoutManager = GridLayoutManager(requireContext(),2)

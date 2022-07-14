@@ -37,5 +37,14 @@
         android:id="@+id/testFragment"
         android:name="com.example.loginui.TestFragment"
         android:label="fragment_test"
-        tools:layout="@layout/fragment_test" />
+        tools:layout="@layout/fragment_test" >
+        <action
+            android:id="@+id/action_testFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.example.loginui.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" />
 </navigation>

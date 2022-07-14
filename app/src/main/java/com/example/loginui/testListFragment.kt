@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.GridLayoutManager
 import com.example.loginui.Adapter.TestListAdapter
 import com.example.loginui.Adapter.UserAdapter
 import com.example.loginui.Model.TestListModel
@@ -40,6 +41,7 @@ class testListFragment : Fragment() {
         list.add(TestListModel("sst","dd"))
         binding.recyclerView.apply {
             adapter = TestListAdapter(list)
+            layoutManager = GridLayoutManager(requireContext(),2)
         }
     }
 

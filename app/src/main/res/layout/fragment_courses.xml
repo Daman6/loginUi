@@ -12,12 +12,16 @@
         android:layout_height="match_parent"
         tools:context=".CoursesFragment">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:listitem="@layout/item_card"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
-
+            tools:listitem="@layout/item_card"/>
+        </RelativeLayout>
     </FrameLayout>
 </layout>

@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.GridLayoutManager
 import com.example.loginui.Adapter.UserAdapter
 import com.example.loginui.Model.UserModel
 import com.example.loginui.databinding.FragmentCoursesBinding
@@ -32,12 +33,13 @@ class CoursesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         list = mutableListOf<UserModel>()
-        list.add(UserModel("Daman","dd"))
-        list.add(UserModel("Aman","dd"))
-        list.add(UserModel("Man","dd"))
-        list.add(UserModel("An","dd"))
+        list.add(UserModel("Photography","dd"))
+        list.add(UserModel("Music Class","dd"))
+        list.add(UserModel("ESE & GATE CE","dd"))
+        list.add(UserModel("ESE & GATE ME","dd"))
         binding.recyclerView.apply {
             adapter = UserAdapter(list)
+            layoutManager = GridLayoutManager(requireContext(),2)
         }
     }
 

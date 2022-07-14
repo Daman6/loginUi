@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/buttongreen">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FREE"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:letterSpacing="0.1"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="4dp" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/paperName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="General Intelligence Practice Set"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="19dp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:id="@+id/paperLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Matriculation Level)"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="19dp"
+                    android:layout_marginTop="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/paperToatalQues"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25 Qs."
+                        android:textColor="@color/colorMediumGray"
+                        android:textSize="15dp"
+                        android:fontFamily="sans-serif-condensed-medium" />
+
+                    <TextView
+                        android:id="@+id/paperTotalTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="17 mins."
+                        android:textColor="@color/colorMediumGray"
+                        android:textSize="15dp"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="sans-serif-condensed-medium" />
+
+                    <TextView
+                        android:id="@+id/paperTotalMarks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50.0 Marks"
+                        android:textColor="@color/colorMediumGray"
+                        android:textSize="15dp"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="sans-serif-condensed-medium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Start Test ->"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="16dp"
+                        android:gravity="end"
+                        android:fontFamily="sans-serif-black" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="#CDE3F4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Syllabus"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="14dp"
+                    android:fontFamily="sans-serif-condensed-medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="English , "
+                    android:textColor="@color/colorBlue"
+                    android:textSize="14dp"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="sans-serif-condensed-medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hindi"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="14dp"
+                    android:fontFamily="sans-serif-condensed-medium" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</layout>

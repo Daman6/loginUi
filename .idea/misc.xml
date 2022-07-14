@@ -9,17 +9,23 @@
         <entry key="app/src/main/res/drawable/outline_background.xml" value="0.176" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.24479166666666666" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.24479166666666666" />
+        <entry key="app/src/main/res/layout/drawer_item_layout.xml" value="0.24375" />
         <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.24479166666666666" />
         <entry key="app/src/main/res/layout/fragment_courses.xml" value="0.24479166666666666" />
         <entry key="app/src/main/res/layout/fragment_forget_pass.xml" value="0.24479166666666666" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.24479166666666666" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.24479166666666666" />
+        <entry key="app/src/main/res/layout/fragment_quiz.xml" value="0.24479166666666666" />
         <entry key="app/src/main/res/layout/fragment_setting.xml" value="0.24479166666666666" />
         <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.24479166666666666" />
         <entry key="app/src/main/res/layout/fragment_test.xml" value="0.24479166666666666" />
         <entry key="app/src/main/res/layout/fragment_test_list.xml" value="0.24479166666666666" />
         <entry key="app/src/main/res/layout/item_card.xml" value="0.24375" />
+        <entry key="app/src/main/res/layout/item_viewpager.xml" value="0.24375" />
+        <entry key="app/src/main/res/layout/nav_header.xml" value="0.24375" />
+        <entry key="app/src/main/res/layout/papers_item_layout.xml" value="0.24375" />
         <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.24375" />
+        <entry key="app/src/main/res/menu/nav_drawer_menu.xml" value="0.24375" />
       </map>
     </option>
   </component>

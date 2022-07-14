@@ -31,7 +31,7 @@ class LoginFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.text1.setOnClickListener {
+        binding.signup.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.action_loginFragment_to_signUpFragment)
         }
         binding.loginBtn.setOnClickListener {

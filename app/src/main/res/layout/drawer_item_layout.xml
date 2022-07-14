@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="@color/purple_500">
+
+            <TextView
+                android:id="@+id/quesNo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="1"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:textColor="@color/white"
+                android:textSize="22dp"></TextView>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</layout>
